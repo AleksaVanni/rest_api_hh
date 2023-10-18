@@ -1,2 +1,2 @@
 # rest_api_hh
-parser_hh
+Парсер вакансий hh
