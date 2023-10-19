@@ -11,8 +11,11 @@ url = f'{DOMAIN}vacancies'
 
 vacancies = 'Python developer'
 
+where = input('Где искать вакансию?')
+query_string = input('Строка запроса?')
+
 params = {
-    'text': vacancies,
+    'text': query_string,
     'area': 1,
     'page': 0,
     'per_page': 10
@@ -31,7 +34,7 @@ for page in range(count_pages):
         print(f"Обрабатывается страница {page}")
 
     params = {
-        'text': vacancies,
+        'text': query_string,
         'area': '1',
         'page': page,
         'per_page': 100
